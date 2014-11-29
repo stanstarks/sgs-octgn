@@ -3,6 +3,8 @@ sgs-octgn
 
 OCTGN Game Definition for 三国杀阵面对决
 
+OCTGN脚本基于mtg-octgn开发。目前没有多少改动。The game definition itself is based on [brine's mtg-octgn project](https://github.com/brine/mtg-octgn) with very little change.
+
 ## 安装 Installation
 将definition目录下的`.nupkg`文件复制到OCTGN/LocalFeed目录下。在OCTGN的游戏管理中安装。
 
