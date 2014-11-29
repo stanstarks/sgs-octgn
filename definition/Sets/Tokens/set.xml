@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set name="Tokens" id="2e440958-78c1-4774-a102-bc8746dbdbbc" gameId="2f7afaa8-2816-47fe-9b0e-888d64505ede" gameVersion="0.0.0.1" version="0.1">
+	<cards>
+		<card name="步兵 Infantry" id="3e856d43-709d-4d8b-a185-906d4183f64c">
+			<property name="Color" value="Colorless" />
+			<property name="Type" value="单位 Unit" />
+			<property name="Subtype" value="步兵 Infantry" />
+			<property name="Rarity" value="Token" />
+			<property name="Rules" value="" />
+			<property name="Power" value="1" />
+			<property name="Toughness" value="1" />
+			<property name="PT Box" value="1 / 1" />
+			<property name="Artist" value="青骑士" />
+			<property name="Number" value="0" />
+		</card>
+		<card name="黄巾步兵 Yellow-Turban Infantry" id="51e60b11-0bbf-48f5-a73b-cee887ac6663">
+			<property name="Color" value="Colorless" />
+			<property name="Type" value="单位 Unit" />
+			<property name="Subtype" value="黄巾/步兵 Yellow-Turban Infantry" />
+			<property name="Rarity" value="Token" />
+			<property name="Rules" value="" />
+			<property name="Power" value="1" />
+			<property name="Toughness" value="1" />
+			<property name="PT Box" value="1 / 1" />
+			<property name="Number" value="0" />
+		</card>
+		<card name="黄巾 Yellow-Turban" id="7d8740f2-5a79-4588-8925-c0778da2d641">
+			<property name="Color" value="Colorless" />
+			<property name="Type" value="单位" />
+			<property name="Subtype" value="黄巾" />
+			<property name="Rarity" value="Token" />
+			<property name="Rules" value="" />
+			<property name="Power" value="1" />
+			<property name="Toughness" value="1" />
+			<property name="PT Box" value="1 / 1" />
+			<property name="Number" value="0" />
+		</card>
+		<card name="魏步兵 Wei Infantry" id="e6b7a452-dfb1-4522-a176-a03c707dac87">
+			<property name="Color" value="Colorless" />
+			<property name="Type" value="单位 Unit" />
+			<property name="Subtype" value="步兵 Infantry" />
+			<property name="Rarity" value="Token" />
+			<property name="Rules" value="" />
+			<property name="Power" value="1" />
+			<property name="Toughness" value="1" />
+			<property name="PT Box" value="1 / 1" />
+			<property name="Number" value="0" />
+		</card>
+	</cards>
+</set>

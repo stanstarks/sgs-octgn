@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+	<blocks>
+		<block type="overlay" id="blank" src="proxy/blank.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="enchant" src="proxy/enchant.png">      <location x="18" y="17" />    </block>
+
+		<block type="overlay" id="bw" src="proxy/back/w.jpg">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bu" src="proxy/back/u.jpg">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bb" src="proxy/back/b.jpg">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="br" src="proxy/back/r.jpg">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bg" src="proxy/back/g.jpg">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bc" src="proxy/back/c.jpg">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="ba" src="proxy/back/a.jpg">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bl" src="proxy/back/l.jpg">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bm" src="proxy/back/m.jpg">      <location x="0" y="0" />    </block>
+
+		<block type="overlay" id="bhw" src="proxy/back/hw.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bhu" src="proxy/back/hu.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bhb" src="proxy/back/hb.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bhr" src="proxy/back/hr.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="bhg" src="proxy/back/hg.png">      <location x="0" y="0" />    </block>
+
+		<block type="overlay" id="rw" src="proxy/rules/w.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="ru" src="proxy/rules/u.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="rb" src="proxy/rules/b.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="rr" src="proxy/rules/r.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="rg" src="proxy/rules/g.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="rc" src="proxy/rules/c.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="rm" src="proxy/rules/m.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="ra" src="proxy/rules/a.png">      <location x="0" y="0" />    </block>
+
+		<block type="overlay" id="rhw" src="proxy/rules/hw.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="rhu" src="proxy/rules/hu.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="rhb" src="proxy/rules/hb.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="rhr" src="proxy/rules/hr.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="rhg" src="proxy/rules/hg.png">      <location x="0" y="0" />    </block>
+
+		<block type="overlay" id="tw" src="proxy/type/w.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="tu" src="proxy/type/u.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="tb" src="proxy/type/b.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="tr" src="proxy/type/r.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="tg" src="proxy/type/g.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="tc" src="proxy/type/c.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="tm" src="proxy/type/m.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="ta" src="proxy/type/a.png">      <location x="0" y="0" />    </block>
+		
+		<block type="overlay" id="f-azorius" src="proxy/factions/azorius.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-orzhov" src="proxy/factions/orzhov.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-dimir" src="proxy/factions/dimir.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-izzet" src="proxy/factions/izzet.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-rakdos" src="proxy/factions/rakdos.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-golgari" src="proxy/factions/golgari.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-gruul" src="proxy/factions/gruul.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-boros" src="proxy/factions/boros.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-selesnya" src="proxy/factions/selesnya.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-simic" src="proxy/factions/simic.png"><location x="0" y="0"/></block>
+		
+		<block type="overlay" id="f-abzan" src="proxy/factions/abzan.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-jeskai" src="proxy/factions/jeskai.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-sultai" src="proxy/factions/sultai.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-mardu" src="proxy/factions/mardu.png"><location x="0" y="0"/></block>
+		<block type="overlay" id="f-temur" src="proxy/factions/temur.png"><location x="0" y="0"/></block>
+
+		<block type="text" id="title">
+			<location x="30" y="32" />
+			<text color="#000000" size="18" font="fonts/mplantin_symbols.ttf" />
+			<border color="#000000" size="1" />
+			<wordwrap height="18" width="318" />
+		</block>
+		<block type="text" id="cost">
+			<location x="31" y="31" />
+			<text color="#000000" size="18" font="fonts/mplantin_symbols.ttf" />
+			<border color="#000000" size="1" />
+			<wordwrap height="18" width="318" align="far" />
+		</block>
+		<block type="text" id="rarity">
+			<location x="31" y="160" />
+			<text color="#000000" size="17" font="fonts/mplantin_symbols.ttf" />
+			<border color="#FFFFFF" size="2" />
+			<wordwrap height="18" width="316" align="far" />
+		</block>
+		<block type="text" id="type">
+			<location x="31" y="200" />
+			<text color="#000000" size="18" font="fonts/mplantin_symbols.ttf" />
+			<border color="#000000" size="1" />
+			<wordwrap height="30" width="315" shrinktofit="True" valign="center" />
+		</block>
+		<block type="text" id="rules">
+			<location x="37" y="240" />
+			<text color="#000000" size="21" font="fonts/mplantin_symbols.ttf" />
+			<wordwrap height="227" width="301" shrinktofit="True"/>
+		</block>
+		<block type="text" id="ptbox">
+			<location x="143" y="474" />
+			<text color="#000000" size="27" font="fonts/mplantin_symbols.ttf" />
+			<border color="#FFFFFF" size="3" />
+			<wordwrap height="18" width="200" align="far" />
+		</block>
+	</blocks>
+
+	<template src="proxy/back/c.jpg" default="True" >
+		<matches>
+			<match name="Flags" value=""/>
+		</matches>
+		<overlayblocks>
+			<link block="bc" />
+			<conditional>
+				<switch property="Color">
+					<case contains="Multicolor" ><link block="bm" /></case>
+					<case value="White"><link block="bw" /></case>
+					<case value="Blue"><link block="bu" /></case>
+					<case value="Black"><link block="bb" /></case>
+					<case value="Red"><link block="br" /></case>
+					<case value="Green"><link block="bg" /></case>
+					<case value="Hybrid White Blue"><link block="bw" /><link block="bhu" /></case>
+					<case value="Hybrid White Black"><link block="bw" /><link block="bhb" /></case>
+					<case value="Hybrid Blue Black"><link block="bu" /><link block="bhb" /></case>
+					<case value="Hybrid Blue Red"><link block="bu" /><link block="bhr" /></case>
+					<case value="Hybrid Black Red"><link block="bb" /><link block="bhr" /></case>
+					<case value="Hybrid Black Green"><link block="bb" /><link block="bhg" /></case>
+					<case value="Hybrid Red Green"><link block="br" /><link block="bhg" /></case>
+					<case value="Hybrid Red White"><link block="br" /><link block="bhw" /></case>
+					<case value="Hybrid Green White"><link block="bg" /><link block="bhw" /></case>
+					<case value="Hybrid Green Blue"><link block="bg" /><link block="bhu" /></case>
+				</switch>
+			</conditional>
+			<conditional>
+				<switch property="Type">
+					<case contains="Land" ><link block="bl" /><link block="rc" /><link block="tc" /></case>
+					<case contains="Artifact" break="True"><link block="ba" /><link block="ra" /><link block="ta" /></case>
+				</switch>
+			</conditional>
+			<conditional>
+				<switch property="Type">
+					<case contains="Enchantment Creature" ><link block="enchant" /></case>
+					<case contains="Enchantment Artifact" ><link block="enchant" /></case>
+				</switch>
+			</conditional>
+			<conditional>
+				<switch property="Flags">
+					<case value="W" ><link block="rw" /><link block="tw" /></case>
+					<case value="U"><link block="ru" /><link block="tu" /></case>
+					<case value="B"><link block="rb" /><link block="tb" /></case>
+					<case value="R"><link block="rr" /><link block="tr" /></case>
+					<case value="G"><link block="rg" /><link block="tg" /></case>
+					<case value="M"><link block="rm" /><link block="tm" /></case>
+					<case value="C"><link block="rc" /><link block="tc" /></case>
+					<case value="WU"><link block="tm" /><link block="rw" /><link block="rhu" /></case>
+					<case value="WB"><link block="tm" /><link block="rw" /><link block="rhb" /></case>
+					<case value="UB"><link block="tm" /><link block="ru" /><link block="rhb" /></case>
+					<case value="UR"><link block="tm" /><link block="ru" /><link block="rhr" /></case>
+					<case value="BR"><link block="tm" /><link block="rb" /><link block="rhr" /></case>
+					<case value="BG"><link block="tm" /><link block="rb" /><link block="rhg" /></case>
+					<case value="RG"><link block="tm" /><link block="rr" /><link block="rhg" /></case>
+					<case value="RW"><link block="tm" /><link block="rr" /><link block="rhw" /></case>
+					<case value="GW"><link block="tm" /><link block="rg" /><link block="rhw" /></case>
+					<case value="GU"><link block="tm" /><link block="rg" /><link block="rhu" /></case>
+				</switch>		
+			</conditional>
+			<conditional>
+				<switch property="Color">
+					<case value="White" ><link block="rw" /><link block="tw" /></case>
+					<case value="Blue"><link block="ru" /><link block="tu" /></case>
+					<case value="Black"><link block="rb" /><link block="tb" /></case>
+					<case value="Red"><link block="rr" /><link block="tr" /></case>
+					<case value="Green"><link block="rg" /><link block="tg" /></case>
+					<case contains="Multicolor" break='False'><link block="tm" /></case>
+					<case contains="Hybrid" break='False'><link block="tc" /></case>
+					<case value="Hybrid White Blue"><link block="rw" /><link block="rhu" /></case>
+					<case value="Hybrid White Black"><link block="rw" /><link block="rhb" /></case>
+					<case value="Hybrid Blue Black"><link block="ru" /><link block="rhb" /></case>
+					<case value="Hybrid Blue Red"><link block="ru" /><link block="rhr" /></case>
+					<case value="Hybrid Black Red"><link block="rb" /><link block="rhr" /></case>
+					<case value="Hybrid Black Green"><link block="rb" /><link block="rhg" /></case>
+					<case value="Hybrid Red Green"><link block="rr" /><link block="rhg" /></case>
+					<case value="Hybrid Red White"><link block="rr" /><link block="rhw" /></case>
+					<case value="Hybrid Green White"><link block="rg" /><link block="rhw" /></case>
+					<case value="Hybrid Green Blue"><link block="rg" /><link block="rhu" /></case>
+					<case value="Multicolor White Blue"><link block="rw" /><link block="rhu" /></case>
+					<case value="Multicolor White Black"><link block="rw" /><link block="rhb" /></case>
+					<case value="Multicolor Blue Black"><link block="ru" /><link block="rhb" /></case>
+					<case value="Multicolor Blue Red"><link block="ru" /><link block="rhr" /></case>
+					<case value="Multicolor Black Red"><link block="rb" /><link block="rhr" /></case>
+					<case value="Multicolor Black Green"><link block="rb" /><link block="rhg" /></case>
+					<case value="Multicolor Red Green"><link block="rr" /><link block="rhg" /></case>
+					<case value="Multicolor Red White"><link block="rr" /><link block="rhw" /></case>
+					<case value="Multicolor Green White"><link block="rg" /><link block="rhw" /></case>
+					<case value="Multicolor Green Blue"><link block="rg" /><link block="rhu" /></case>
+					<case contains="Multicolor"><link block="rm" /></case>
+					<case contains="Hybrid"><link block="rc" /></case>
+				</switch>
+			</conditional>
+			<conditional>
+				<switch property="Faction">
+					<case value="Azorius"><link block="f-azorius"/></case>
+					<case value="Orzhov"><link block="f-orzhov"/></case>
+					<case value="Dimir"><link block="f-dimir"/></case>
+					<case value="Izzet"><link block="f-izzet"/></case>
+					<case value="Rakdos"><link block="f-rakdos"/></case>
+					<case value="Golgari"><link block="f-golgari"/></case>
+					<case value="Gruul"><link block="f-gruul"/></case>
+					<case value="Boros"><link block="f-boros"/></case>
+					<case value="Selesnya"><link block="f-selesnya"/></case>
+					<case value="Simic"><link block="f-simic"/></case>
+					
+					<case value="Abzan"><link block="f-abzan"/></case>
+					<case value="Jeskai"><link block="f-jeskai"/></case>
+					<case value="Sultai"><link block="f-sultai"/></case>
+					<case value="Mardu"><link block="f-mardu"/></case>
+					<case value="Temur"><link block="f-temur"/></case>
+				</switch>
+			</conditional>
+		<link block="blank" />
+		</overlayblocks>
+		<textblocks>
+			<link block="title"><property name="Name" /></link>
+			<link block="cost"><property name="Cost" /></link>
+			<link block="rarity"><property name="Rarity" /></link>
+			<link block="type" separator=" --  "><property name="Type" /><property name="Subtype" /></link>
+			<link block="rules"><property name="Rules" /></link>
+			<link block="ptbox"><property name="PT Box" /></link>
+		</textblocks>
+	</template>
+</templates>
