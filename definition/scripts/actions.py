@@ -52,6 +52,8 @@ def registerPlayer(player, groups = []): #this function triggers off loading a d
         playersDict = eval(getGlobalVariable('activePlayers')) #the activePlayers variable just keeps track of the active players in the game
         playersDict[me._id] = autoscriptCheck() #keeps track of who's allergic to fun
         setGlobalVariable('activePlayers', str(playersDict))
+    gDeckCount = len(me.Library)
+    notify("{0} 加载了牌组,其中有 {1} 张卡.".format(me, gDeckCount))
 
 def priorityResolve(name, oldValue, value):
     if name == 'priority' and value == '[]':
@@ -188,7 +190,7 @@ def lose1Life(group, x = 0, y = 0):
 def gain1Life(group, x = 0, y = 0):
     me.life += 1
 
-def scoop(group, x = 0, y = 0):
+def rstGame(group, x = 0, y = 0):
     mute()
     if not confirm("Are you sure you want to scoop?"):
         return
@@ -201,6 +203,7 @@ def scoop(group, x = 0, y = 0):
     me.green = 0
     me.colorless = 0
     me.general = 0
+    me.setGlobalVariable("mulligans","False")
     for card in me.Library:
         card.moveTo(card.owner.Library)
     myCards = (card for card in table
@@ -214,7 +217,12 @@ def scoop(group, x = 0, y = 0):
     exile = me.piles['Exiled Zone']
     for card in exile:
         card.moveTo(card.owner.Library)
-    notify("{} scoops.".format(me))
+    for card in me.Library:
+        if card.isFaceUp:
+            card.isFaceUp = False
+    me.Library.shuffle()
+    notify("{} reset game.".format(me))
+	
 
 def clearAll(group, x = 0, y = 0):
     notify("{} clears all targets and highlights.".format(me))
@@ -870,6 +878,49 @@ def randomPick(group, x = 0, y = 0):
         notify("{} randomly picks {}'s {} on the battlefield.".format(me, card.controller, card))
     else:
         notify("{} randomly picks {} from their {}.".format(me, card, group.name))
+
+def initialHand(group, x = 0, y = 0):
+    if len(me.Library) < 7:
+        return
+    if len(group) >= 7:
+        return
+    mute()
+    cardCount = len(group)
+    oDrawCount = 7 - cardCount
+    shuffle(me.Library, silence = True)
+    for card in me.Library.top(oDrawCount):
+        card.moveTo(card.owner.hand)
+    oNowCardsNum = len(group)
+    notify("{} 抽取了 {} 张牌，现在有 {} 张手牌。".format(me, oDrawCount,oNowCardsNum))
+	
+def shuffleToLibraryBottom(group, x = 0, y = 0):
+    mute()
+    cardList = [c for c in me.hand if c.targetedBy and c.targetedBy == me]
+    count = 0
+    numOfTargetCards = len(cardList)
+    if me.getGlobalVariable("mulligans") == "False":
+        timesOfMulligans = 0
+    else:
+        timesOfMulligans = 1
+    emergencyStop = len(cardList) + 4 ## just in case something causes an infinite while loop
+    while len(cardList) > 0:
+        emergencyStop -= 1
+        if emergencyStop == 0:
+            break
+        index = rnd(0, len(cardList) - 1)
+        card = cardList.pop(index)
+        if card.controller == me:
+            card.moveToBottom(card.owner.Library)
+            count += 1
+    if ( count - timesOfMulligans ) < 0:
+        count = 0
+    else:
+        count = count - timesOfMulligans
+    for card in me.Library.top(count):
+        card.moveTo(card.owner.hand)
+    me.setGlobalVariable("mulligans","True")
+    notify("{} 选择了 {} 张手牌洗入牌堆底部，并抽取了 {} 张牌.".format(me, numOfTargetCards, count))
+
 
 def mulligan(group, x = 0, y = 0):
     mute()
