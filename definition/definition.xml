@@ -65,7 +65,7 @@
     <groupaction menu="响应 Respond" shortcut="Enter" execute="respond" />
     <groupaction menu="让出优先权 Pass Priority" shortcut="Tab" execute="passPriority" />
     <groupaction menu="Auto-Pass Priority (Toggle)" shortcut="F6" execute="autoPass" />
-    <groupaction menu="重新开始游戏 Reset All" shortcut="ctrl+shift+S" execute="rstGame" />
+    <groupaction menu="重新开始游戏 Scoop" shortcut="ctrl+shift+S" execute="scoop" />
     <groupaction menu="下一阶段 Next Phase" shortcut="ctrl+x" execute="nextPhase" />
     <groupactions menu="阶段/步骤...">
       <groupaction menu="跳至重置阶段" shortcut="F1" execute="goToUpkeep" />
@@ -107,15 +107,16 @@
     </cardactions>
     <cardaction menu="Check Card Rulings (on Gatherer)" execute="rulings" />
   </table>
-  <player summary="L{#Life}|H{#Hand}|C{#General}">
+  <player summary="L{#Life}|P{#Poison}|H{#Hand}|C{#General}">
     <counter name="Life" icon="counters/life.png" default="30" />
-    <counter name="Hand" icon="counters/life.png" default="5" />
-    <counter name="Wei" icon="counters/blue.png" />
-    <counter name="Shu" icon="counters/red.png" />
-    <counter name="Wu" icon="counters/green.png" />
-    <counter name="Qun" icon="counters/colorless.png" />
+    <counter name="Poison" icon="counters/poison.png" />
+    <counter name="White" icon="counters/white.png" />
+    <counter name="Blue" icon="counters/blue.png" />
+    <counter name="Black" icon="counters/black.png" />
+    <counter name="Red" icon="counters/red.png" />
+    <counter name="Green" icon="counters/green.png" />
+    <counter name="Colorless" icon="counters/colorless.png" />
     <counter name="General" icon="counters/general.png" />
-	<globalvariable name="mulligans" value="False" />
 	<globalvariable name="f6" value="False" />
     <hand name="Hand" shortcut="ctrl+H" visibility="me" width="63" height="88" icon="groups/hand.png">
       <cardaction menu="打出 Cast Spell" default="True" shortcut="ctrl+c" execute="play" />
@@ -125,8 +126,6 @@
       <cardaction menu="放回牌库 Return to Library" shortcut="ctrl+Y" execute="tolibrary" />
       <cardaction menu="置于牌库某位置 Move to position in Library" shortcut="ctrl+shift+Y" execute="tolibraryposition" />
       <cardaction menu="Submit Tags" execute="submitTags" />
-	  <groupaction menu="游戏准备：抽起始手牌" execute="initialHand" />
-	  <groupaction menu="游戏准备：调度选择的手牌" execute="shuffleToLibraryBottom" />
       <groupaction menu="Mulligan" shortcut="ctrl+M" execute="mulligan" />
       <groupaction menu="Random Discard" execute="randomDiscard" />
       <groupactions menu="Move All Cards To...">
