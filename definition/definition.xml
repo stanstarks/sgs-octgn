@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    id="2f7afaa8-2816-47fe-9b0e-888d64505ede" version="0.0.0.10" octgnVersion="3.1.0.32"
+    id="2f7afaa8-2816-47fe-9b0e-888d64505ede" version="0.0.1.2" octgnVersion="3.1.0.32"
     name="三国杀阵面对决" tags="dotb" description="三国杀阵面对决 A TCG from the Three Kingdoms"
     setsurl="http://www.iplaysgs.com/portal.php?mod=topic&amp;topicid=1" gameurl="http://www.sanguosha.com/detail/20140731_9016_5413.html" authors="stan"
     markersize="14" iconurl="https://raw.githubusercontent.com/stanstarks/sgs-octgn/master/definition/art/logo.jpg" >
@@ -126,8 +126,7 @@
       <cardaction menu="置于牌库某位置 Move to position in Library" shortcut="ctrl+shift+Y" execute="tolibraryposition" />
       <cardaction menu="Submit Tags" execute="submitTags" />
 	  <groupaction menu="游戏准备：抽起始手牌" execute="initialHand" />
-	  <groupaction menu="游戏准备：调度选择的手牌" execute="shuffleToLibraryBottom" />
-      <groupaction menu="Mulligan" shortcut="ctrl+M" execute="mulligan" />
+	  <groupaction menu="游戏准备：调度选择的手牌" shortcut="ctrl+M" execute="mulligan" />
       <groupaction menu="Random Discard" execute="randomDiscard" />
       <groupactions menu="Move All Cards To...">
         <groupaction menu="Owner's Library (Top)" execute="libraryTopAll" />

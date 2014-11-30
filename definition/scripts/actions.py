@@ -893,49 +893,22 @@ def initialHand(group, x = 0, y = 0):
     oNowCardsNum = len(group)
     notify("{} 抽取了 {} 张牌，现在有 {} 张手牌。".format(me, oDrawCount,oNowCardsNum))
 	
-def shuffleToLibraryBottom(group, x = 0, y = 0):
+def mulligan(group, x = 0, y = 0):
     mute()
     cardList = [c for c in me.hand if c.targetedBy and c.targetedBy == me]
     count = 0
     numOfTargetCards = len(cardList)
+    for card in cardList:
+        card.moveToBottom(card.owner.Library)
     if me.getGlobalVariable("mulligans") == "False":
         timesOfMulligans = 0
     else:
         timesOfMulligans = 1
-    emergencyStop = len(cardList) + 4 ## just in case something causes an infinite while loop
-    while len(cardList) > 0:
-        emergencyStop -= 1
-        if emergencyStop == 0:
-            break
-        index = rnd(0, len(cardList) - 1)
-        card = cardList.pop(index)
-        if card.controller == me:
-            card.moveToBottom(card.owner.Library)
-            count += 1
-    if ( count - timesOfMulligans ) < 0:
-        count = 0
-    else:
-        count = count - timesOfMulligans
+    count = numOfTargetCards - timesOfMulligans
     for card in me.Library.top(count):
         card.moveTo(card.owner.hand)
     me.setGlobalVariable("mulligans","True")
     notify("{} 选择了 {} 张手牌洗入牌堆底部，并抽取了 {} 张牌.".format(me, numOfTargetCards, count))
-
-
-def mulligan(group, x = 0, y = 0):
-    mute()
-    newCount = len(group) - 1
-    if newCount < 0:
-        return
-    if not confirm("Mulligan down to %i ?" % newCount):
-        return
-    notify("{} mulligans down to {}".format(me, newCount))
-    for card in group:
-        card.moveTo(card.owner.Library)
-    uselessvar = rnd(10, 1000)
-    shuffle(me.Library, silence = True)
-    for card in me.Library.top(newCount):
-        card.moveTo(card.owner.hand)
 
 def draw(group, x = 0, y = 0):
     mute()
