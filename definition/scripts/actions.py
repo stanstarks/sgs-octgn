@@ -181,14 +181,17 @@ def goToCombat(group, x = 0, y = 0):
 
 def goToEnding(group, x = 0, y = 0):
     global phaseIdx
-    phaseIdx = 9
+    phaseIdx = 5
     showCurrentPhase(group)
 
 def lose1Life(group, x = 0, y = 0):
     me.life -= 1
 
 def gain1Life(group, x = 0, y = 0):
-    me.life += 1
+    if me.life >= 30:
+        me.life = 30
+    else:
+        me.life += 1
 
 def rstGame(group, x = 0, y = 0):
     mute()
@@ -359,7 +362,7 @@ def play(card, x = 0, y = 0):
         if text != "BREAK":
             timer = time.clock()
             ## Checks to see if the cast card is an Aura, then check to see if a target was made to resolve-attach to
-            if (card.Subtype != None and re.search(r'Aura', card.Subtype)) or re.search(r'Bestow ', card.Rules):  ## Automatically register the card as an attachment if it's an Aura or Bestow
+            if (card.Subtype != None and re.search(r'附属于目标单位', card.Rules)):  ## Automatically register the card as an attachment if it's an Aura or Bestow
                 target = (card for card in table if card.targetedBy)
                 targetcount = sum(1 for card in table if card.targetedBy)
                 if targetcount == 1:
@@ -371,7 +374,7 @@ def play(card, x = 0, y = 0):
                         text += ", targeting {}".format(targetcard)
             timer = debugWhisper("play2", card, timer)
             ## If its a land, automatically resolve it
-            if re.search('Land', card.Type) or (not card.isFaceUp): ## SGS: play a card face down as a colorless land
+            if re.search('领土', card.Type) or (not card.isFaceUp): ## SGS: play a card face down as a colorless land
                 text += autoParser(card, 'resolve')
                 notify("{} plays {}{}.".format(me, card, text))
                 autoParser(card, 'etb')
@@ -387,11 +390,11 @@ def play(card, x = 0, y = 0):
             timer = debugWhisper("play5", card, timer)
     else:
         src = card.group
-        if re.search("Stratagem", card.Type):
+        if re.search("锦囊", card.Type):
             card.moveTo(card.owner.Graveyard)
         else:
             card.moveToTable(defaultX, defaultY)
-        notify("{} plays {} from their {}.".format(me, card, src.name))
+        notify("{}从{}打出{}.".format(me, src.name, card))
         timer = debugWhisper("play6", card, timer)
         # cardalign()
         timer = debugWhisper("play7", card, timer)
@@ -414,7 +417,7 @@ def resolve(card, x = 0, y = 0):
             notify("{} resolves {} ({}){}".format(me, card, tagClass, text))
             if moveTo == 'exile':
                 card.moveTo(card.owner.piles['Exiled Zone'])
-            elif card.isFaceUp == False or (tagClass == 'cast' and not re.search('Instant', card.Type) and not re.search('Sorcery', card.Type)): #handles permanents etb triggers
+            elif card.isFaceUp == False or (tagClass == 'cast' and not re.search('锦囊', card.Type)): #handles permanents etb triggers
                 autoParser(card, 'etb')
             else: #non-permanents and ability triggers are sent to graveyard after resolution
                 card.moveTo(card.owner.Graveyard)
@@ -520,14 +523,14 @@ def attack(card, target, x = 0, y = 0):
             card.highlight = AttackColor
         text = autoParser(card, 'attack')
         if text != "BREAK":
-            notify("{} attacks with {}{}.".format(me, card, text))
+            notify("{}使用{}攻击{}{}.".format(me, card, target, text))
     else:
         card.orientation |= Rot90
         if card.highlight in [DoesntUntapColor, AttackDoesntUntapColor, BlockDoesntUntapColor]:
             card.highlight = AttackDoesntUntapColor
         else:
             card.highlight = AttackColor
-        notify('{} attacks {} with {}'.format(me, target, card))
+        notify('{}使用{}攻击{}'.format(me, card, target))
 
 def batchAttackWithoutTapping(cards, x = 0, y = 0):
     mute()
@@ -678,17 +681,7 @@ def blink(card, x = 0, y = 0):
 
 def rulings(card, x = 0, y = 0):
     mute()
-    if not card.MultiverseId == None:
-        openUrl('http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid={}'.format(card.MultiverseId))
-
-def generaltoggle(card, x = 0, y = 0): ## This isn't used anymore
-    mute()
-    if counters['general'] in card.markers:
-        card.markers[counters['general']] = 0
-        notify("{}'s commander {} enters the battlefield.".format(me, card))
-    else:
-        card.markers[counters['general']] = 1
-        notify("{}'s commander {} leaves the battlefield.".format(me, card))
+    openUrl('http://iplaysgs.com/games/src/cards/sgs.html#!page=list&condition=1:name,{}&param=1:start,0|size,default'.format(card))
 
 def doesNotUntap(card, x = 0, y = 0):
     mute()

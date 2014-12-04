@@ -1,6 +1,7 @@
 counters = {
     'p1p1': ('+1/+1 counter', '6480e55b-0864-41bf-ad00-43cc2482a75c'), ###
     'm1m0': ('-1/-0 counter', '0794cd6c-320a-47bb-ad57-3e19232a0706'), ###
+    'm1m1': ('-1/-1 counter', 'bf4c61d0-0ff9-4ec3-96c1-7e2874d11dde'), ###
     'damage': ('Damage counter', 'fabd2965-929e-4ee9-b69c-e278e3cd4098') ###
 }
 

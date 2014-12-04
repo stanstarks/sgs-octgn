@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="2f7afaa8-2816-47fe-9b0e-888d64505ede" sleeveid="0">
+  <section name="Main" shared="False">
+    <card qty="3" id="7beee3e4-75de-4cfe-a073-3614967b9980">韩浩</card>
+    <card qty="3" id="a8b663b2-309a-4688-83f6-bf8d9bd80f63">过河拆桥</card>
+    <card qty="3" id="7fcd40c5-5eb0-44d7-a14a-a8d212c348b1">看破</card>
+    <card qty="3" id="83c046a2-015a-487f-acf4-6823fdcd15db">屯田</card>
+    <card qty="3" id="6f55fa36-2122-4f39-a45b-35e1de3e8920">无懈可击</card>
+    <card qty="3" id="047d46e6-cb34-4c5c-8315-905c14b29636">早终的先知·郭嘉</card>
+    <card qty="3" id="b0cfc124-2c69-49c1-b30a-6d5c9e58abd2">文昭皇后·甄姬</card>
+    <card qty="3" id="727b1843-842e-4cc7-9b82-7d2878b68f7b">舍身为主·祖茂</card>
+    <card qty="3" id="7ab6e5e0-4c73-4e42-9559-5cdf6f9fa231">南华老仙</card>
+    <card qty="3" id="91b06ebe-1342-4418-8dc6-a7943e79a977">亡国哀民</card>
+    <card qty="1" id="6e288c5c-1b76-441a-a236-0bd7091cfba2">流浪者的地图</card>
+    <card qty="2" id="b9cd3e2d-a335-4d20-8fdc-b06728a98972">大雾</card>
+    <card qty="3" id="c4fb5fce-f033-4d0b-95ae-f89dea5398ad">宦官的毒策</card>
+    <card qty="8" id="dac788d3-7dc8-4895-a5c5-e30e943986e6">魏领土</card>
+    <card qty="3" id="5646ba69-2df9-4e64-a090-9acbf890fb2e">吴领土</card>
+    <card qty="3" id="16dcb490-0f89-42c3-9c2f-9061320e72ae">群雄领土</card>
+  </section>
+  <section name="Sideboard" shared="False" />
+  <section name="Command Zone" shared="False" />
+  <section name="Planes/Schemes" shared="False" />
+  <notes><![CDATA[]]></notes>
+</deck>

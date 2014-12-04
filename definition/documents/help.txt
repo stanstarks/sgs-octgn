@@ -1,6 +1,6 @@
-(Last modified 11/09/2013)
+(Last modified 12/04/2014)
 
-This is the Magic: the Gathering Game Definition for OCTGN.  You can always find the latest information on running M:tG with oCTGN at http://www.octgngames.com/mtg .
+This is the SGS: Duels on the Battlefield Game Definition for OCTGN.  You can always find the latest information on running M:tG with oCTGN at http://www.iplaysgs.com/forum.php?mod=viewthread&tid=301 .
 
 This game definition features the Autoscript system, which includes the Stack, card alignment, and simple card-based automation.  This system can be disabled by selecting "Enable/Disable Autoscripts" in the Table's right-click menu.
 
@@ -41,7 +41,7 @@ Play card face-down from your hand
  -- Click-Drag a card in your hand, then hold SHIFT as you drop the card onto the Table.
 
 
-------MAGIC-SPECIFIC TABLE FUNCTIONS------
+------SGS-SPECIFIC TABLE FUNCTIONS------
 
 Pass Priority (TAB)
  -- Will announce to other players that you pass priority (don't have any responses.)
@@ -83,10 +83,9 @@ Commander Toggle / Exclude from Alignment
  -- While a Commander Marker is on the card, it will not be aligned during card alignment sweeps.
  -- Useful to mark your Commander (or anything exiled with cards like 'Oblivion Ring') as not-in-play so you can move them aside from gameplay.
 
-Morph/Transform/Flip Card (CTRL+F)
+Flip Card (CTRL+F)
  -- Will toggle a 'Transform' card (Innistrad Block) to switch to it's alternate side.
  -- Will turn a 'Flip' card (Kamigawa Block) to display its upside-down state.
- -- Will 'Morph' a card face-up or face-down if neither of the above conditions apply.  If the card has any Morph triggers (and is automated), a Morph ability will be added to the stack.
 
 Turn Face-Up/Face-Down (CTRL+SHIFT+F)
  -- Manually forces a card face-up/Face-down, ignoring any autoscripts that may occur.
@@ -102,18 +101,9 @@ Shuffle Cards to Bottom of Library
  -- Selecting multiple cards will move them all.
  -- This is useful for abilities such as Cascade, if you reveal cards first by dragging them to the table.
 
-Check Card Rulings (on Gatherer)
- -- Will open up your internet browser and link you to the card's Gatherer page
+Check Card Rulings (on iplaysgs.com)
+ -- Will open up your internet browser and link you to the card's iplaysgs.com page
 
-
-------MAGIC-SPECIFIC HAND FUNCTIONS------
-
-
-Suspend Card
- -- This function will allow you to Suspend cards by inputting a number of time counters (suspend values are not yet autoscripted and must be inputted manually).
- -- Suspending a card will align it to the third row of the table with a special Suspend marker and the specified number of Time counters.
- -- Double-clicking a card with the Suspend marker will remove one time counter from it.
- -- Removing the last Time counter from a suspended card will move the card to the Stack (casting it).
 
 
 ------MAGIC-SPECIFIC HAND FUNCTIONS------
@@ -126,11 +116,3 @@ Scry (CTRL+SHIFT+C)
  -- To add a card to the BOTTOM of your deck, click the button with the card name.
  -- To add cards to the TOP of your deck (or switch back to BOTTOM), click the 'Switch to TOP' or 'Switch to BOTTOM' button on the bottom.
  -- The scry function will not rearrange your deck until all cards have been selected.  Cancelling out at any time will cancel the scry without rearranging.
-
-
-------MAGIC-SPECIFIC GRAVEYARD FUNCTIONS------
-
-
-Cast Spell (Flashback) (CTRL+F)
- -- Will cast the spell onto the stack, and then exiles it after it resolves.
-  NOTE! It will also exile creatures, so don't use this for effects like Unearth!

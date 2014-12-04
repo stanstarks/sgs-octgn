@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    id="2f7afaa8-2816-47fe-9b0e-888d64505ede" version="0.0.1.2" octgnVersion="3.1.0.32"
+    id="2f7afaa8-2816-47fe-9b0e-888d64505ede" version="0.0.1.6" octgnVersion="3.1.0.32"
     name="三国杀阵面对决" tags="dotb" description="三国杀阵面对决 A TCG from the Three Kingdoms"
     setsurl="http://www.iplaysgs.com/portal.php?mod=topic&amp;topicid=1" gameurl="http://www.sanguosha.com/detail/20140731_9016_5413.html" authors="stan"
     markersize="14" iconurl="https://raw.githubusercontent.com/stanstarks/sgs-octgn/master/definition/art/logo.jpg" >
@@ -61,16 +61,16 @@
     <groupaction menu="Roll Die" shortcut="ctrl+R" execute="rollDie" />
     <groupaction menu="Change Die" shortcut="ctrl+shift+R" execute="setDie" />
     <groupaction menu="制造衍生物 Create a Token..." shortcut="ctrl+shift+T" execute="token" />
-    <groupaction menu="随机选择一张卡 Pick a Random Card" execute="randomPick" />
-    <groupaction menu="响应 Respond" shortcut="Enter" execute="respond" />
-    <groupaction menu="让出优先权 Pass Priority" shortcut="Tab" execute="passPriority" />
+    <groupaction menu="随机选择一个目标" execute="randomPick" />
+    <groupaction menu="响应" shortcut="Enter" execute="respond" />
+    <groupaction menu="让出优先权" shortcut="Tab" execute="passPriority" />
     <groupaction menu="Auto-Pass Priority (Toggle)" shortcut="F6" execute="autoPass" />
     <groupaction menu="重新开始游戏 Reset All" shortcut="ctrl+shift+S" execute="rstGame" />
     <groupaction menu="下一阶段 Next Phase" shortcut="ctrl+x" execute="nextPhase" />
     <groupactions menu="阶段/步骤...">
       <groupaction menu="跳至重置阶段" shortcut="F1" execute="goToUpkeep" />
-      <groupaction menu="跳至主阶段" shortcut="F2" execute="goToMain" />
-      <groupaction menu="跳至结束阶段Jump to Ending Phase" shortcut="F4" execute="goToEnding" />
+      <groupaction menu="跳至主阶段" shortcut="F4" execute="goToMain" />
+      <groupaction menu="跳至结束阶段Jump to Ending Phase" shortcut="F5" execute="goToEnding" />
     </groupactions>
     <groupaction menu="Lose 1 Life" shortcut="ctrl+Q" execute="lose1Life" />
     <groupaction menu="Gain 1 Life" shortcut="ctrl+W" execute="gain1Life" />
@@ -83,29 +83,29 @@
 	</groupactions>
     <groupaction menu="View Update Log" execute="changeLog" />
     <cardaction menu="Tap/Untap or Resolve" default="True" batchExecute="batchResolve" />
-    <cardaction menu="Don't Untap during Untap Step" shortcut="ctrl+V" execute="doesNotUntap" />
+    <cardaction menu="重置阶段不重置该牌" shortcut="ctrl+V" execute="doesNotUntap" />
     <cardaction menu="攻击玩家" shortcut="ctrl+A" batchExecute="batchAttack" />
     <cardaction menu="攻击阵地" shortcut="ctrl+shift+A" batchExecute="batchAttackPosition" />
-    <cardaction menu="Attach to Targeted Card" shortcut="ctrl+Q" execute="attach" />
-    <cardaction menu="翻面 Turn Face-Up/Down" shortcut="ctrl+shift+F" execute="flip" />
-    <cardaction menu="破坏该卡 Destroy Card" shortcut="del" batchExecute="batchDestroy" />
-    <cardaction menu="放逐该卡 Exile Card" shortcut="ctrl+E" batchExecute="batchExile" />
+    <cardaction menu="附属于目标卡" shortcut="ctrl+Q" execute="attach" />
+    <cardaction menu="翻面" shortcut="ctrl+shift+F" execute="flip" />
+    <cardaction menu="破坏该卡" shortcut="del" batchExecute="batchDestroy" />
+    <cardaction menu="放逐该卡" shortcut="ctrl+E" batchExecute="batchExile" />
     <cardaction menu="Blink Card" shortcut="ctrl+shift+B" execute="blink" />
-    <cardaction menu="置于牌库顶 Move to Top of Libary" shortcut="ctrl+Y" execute="tolibrary" />
-    <cardaction menu="置于牌库某位置 Move to a Position in Library" shortcut="ctrl+shift+Y" execute="tolibraryposition" />
-    <cardaction menu="洗入牌库底 Shuffle Cards to Bottom of Library"  batchExecute="libraryBottomAllShuffle" />
-    <cardaction menu="移回手牌 Move to Hand" shortcut="ctrl+H" execute="tohand" />
+    <cardaction menu="置于牌库顶" shortcut="ctrl+Y" execute="tolibrary" />
+    <cardaction menu="置于牌库某位置" shortcut="ctrl+shift+Y" execute="tolibraryposition" />
+    <cardaction menu="洗入牌库底"  batchExecute="libraryBottomAllShuffle" />
+    <cardaction menu="移回手牌" shortcut="ctrl+H" execute="tohand" />
     <cardaction menu="Clear Card" shortcut="esc" execute="clear" />
-    <cardaction menu="使用启动能力 Use Activated Ability" shortcut="ctrl+Z" execute="activate" />
-    <cardactions menu="Add/Remove Counters...">
-      <cardaction menu="Add +1/+1 Counter" shortcut="ctrl+2" execute="addPlusOneMarker" />
-      <cardaction menu="Add Damage Counter" shortcut="ctrl+4" execute="addDamageMarker" />
+    <cardaction menu="使用启动能力" shortcut="ctrl+Z" execute="activate" />
+    <cardactions menu="增加/移除标记物...">
+      <cardaction menu="增加+1/+1标记" shortcut="ctrl+2" execute="addPlusOneMarker" />
+      <cardaction menu="增加伤害标记" shortcut="ctrl+4" execute="addDamageMarker" />
       <cardaction menu="Auto-Remove Counter" shortcut="backspace" execute="autoRemoveMarker" />
-      <cardaction menu="Remove +1/+1 Counter" shortcut="ctrl+shift+2" execute="removePlusOneMarker" />
-      <cardaction menu="Remove Damage Counter" shortcut="ctrl+shift+4" execute="removeDamageMarker" />
-      <cardaction menu="Add Other Counter..." shortcut="ctrl+0" batchExecute="addMarker" />
+      <cardaction menu="移除+1/+1标记" shortcut="ctrl+shift+2" execute="removePlusOneMarker" />
+      <cardaction menu="移除伤害标记" shortcut="ctrl+shift+4" execute="removeDamageMarker" />
+      <cardaction menu="增加其他标记..." shortcut="ctrl+0" batchExecute="addMarker" />
     </cardactions>
-    <cardaction menu="Check Card Rulings (on Gatherer)" execute="rulings" />
+    <cardaction menu="Check Card Rulings (on iplaysgs)" execute="rulings" />
   </table>
   <player summary="L{#Life}|H{#Hand}|C{#General}">
     <counter name="Life" icon="counters/life.png" default="30" />

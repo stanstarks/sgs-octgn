@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="2f7afaa8-2816-47fe-9b0e-888d64505ede" sleeveid="0">
+  <section name="Main" shared="False">
+    <card qty="15" id="1105f6d5-ae7e-4741-a7b9-bb527546df27">蜀领土</card>
+    <card qty="3" id="cc80f4d4-de81-4ec6-ad6b-944930adfcf3">孙乾</card>
+    <card qty="3" id="29550593-e879-4b0b-8503-9d005d50b71d">武侯将阵兵</card>
+    <card qty="3" id="0e32d4fa-2c54-47e4-a6b4-bf6db888b2fa">夤夜秉烛·伊籍</card>
+    <card qty="3" id="cbab3e1d-eb7a-4b3a-9251-cc5b0c8c2280">关平</card>
+    <card qty="2" id="349ac89f-6cfa-4f28-b163-55499f2a48b1">战场的游龙·赵云</card>
+    <card qty="3" id="2fa813d3-a42c-483e-8e83-0bfc5ba0bfac">决斗</card>
+    <card qty="3" id="947c5c33-9747-45f6-9d73-de584f14a050">奋迅</card>
+    <card qty="3" id="5248e743-7c6c-4ba2-8e23-021307f6e5f8">一夫当关</card>
+    <card qty="3" id="d285749d-b5f0-4ac9-9aab-a3c709cf2170">夜观天象</card>
+    <card qty="2" id="eb96486e-7fee-4e2f-ab0b-7b0a1eaf7e60">广纳良策</card>
+    <card qty="3" id="276729dd-934b-4357-900e-306c3e805cf7">再起兴军</card>
+    <card qty="1" id="c33f5aba-2121-4c22-9b98-391aeb22e2c3">八阵演武</card>
+    <card qty="3" id="67a79dfa-8368-4a44-ae16-ffd4040f6f13">英勇无畏</card>
+  </section>
+  <section name="Sideboard" shared="False" />
+  <section name="Command Zone" shared="False" />
+  <section name="Planes/Schemes" shared="False" />
+  <notes><![CDATA[]]></notes>
+</deck>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="2f7afaa8-2816-47fe-9b0e-888d64505ede" sleeveid="0">
+  <section name="Main" shared="False">
+    <card qty="2" id="91013140-8cb6-4d86-9d91-0d1832091e99">敕令流放</card>
+    <card qty="3" id="7beee3e4-75de-4cfe-a073-3614967b9980">韩浩</card>
+    <card qty="1" id="7fcd40c5-5eb0-44d7-a14a-a8d212c348b1">看破</card>
+    <card qty="3" id="83c046a2-015a-487f-acf4-6823fdcd15db">屯田</card>
+    <card qty="3" id="c65689b1-98e8-4796-a63e-ad7251a92e59">魏武精兵</card>
+    <card qty="3" id="b0cfc124-2c69-49c1-b30a-6d5c9e58abd2">文昭皇后·甄姬</card>
+    <card qty="3" id="047d46e6-cb34-4c5c-8315-905c14b29636">早终的先知·郭嘉</card>
+    <card qty="3" id="6f55fa36-2122-4f39-a45b-35e1de3e8920">无懈可击</card>
+    <card qty="1" id="a905e70a-051a-47ef-b744-769af64f9a6c">乱世奸雄·曹操</card>
+    <card qty="1" id="a9d38126-0221-4e9c-8d33-a0b8c403883c">虎卫·典韦</card>
+    <card qty="2" id="b800feaa-ca63-4382-9760-8cb150b6d898">陷阵统率·高顺</card>
+    <card qty="3" id="1bd08d3f-65d3-406a-94eb-ca550d0dc2a6">回天术</card>
+    <card qty="3" id="dba78202-7465-419a-9cba-2ad06d792cc8">雷击</card>
+    <card qty="3" id="86839f2f-e338-4a0f-8ef7-4b5bab81c81a">南狐太守·李典</card>
+    <card qty="1" id="c4fb5fce-f033-4d0b-95ae-f89dea5398ad">宦官的毒策</card>
+    <card qty="8" id="dac788d3-7dc8-4895-a5c5-e30e943986e6">魏领土</card>
+    <card qty="7" id="16dcb490-0f89-42c3-9c2f-9061320e72ae">群雄领土</card>
+  </section>
+  <section name="Sideboard" shared="False" />
+  <section name="Command Zone" shared="False" />
+  <section name="Planes/Schemes" shared="False" />
+  <notes><![CDATA[]]></notes>
+</deck>

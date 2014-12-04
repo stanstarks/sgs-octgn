@@ -721,8 +721,8 @@
       <property name="MultiverseId" value="1047" />
     </card>
     <card name="关平" id="cbab3e1d-eb7a-4b3a-9251-cc5b0c8c2280">
-      <property name="Cost" value="%%2" />
-      <property name="CMC" value="2" />
+      <property name="Cost" value="%%4" />
+      <property name="CMC" value="4" />
       <property name="Color" value="Red" />
       <property name="Type" value="无双单位" />
       <property name="Subtype" value="武将" />
@@ -1195,8 +1195,8 @@
       <property name="MultiverseId" value="1079" />
     </card>
     <card name="战场的游龙·赵云" id="349ac89f-6cfa-4f28-b163-55499f2a48b1">
-      <property name="Cost" value="%2" />
-      <property name="CMC" value="2" />
+      <property name="Cost" value="%%5" />
+      <property name="CMC" value="5" />
       <property name="Color" value="Red" />
       <property name="Type" value="无双单位" />
       <property name="Subtype" value="武将/五虎将" />
@@ -2634,7 +2634,7 @@
     <card name="魏领土" id="dac788d3-7dc8-4895-a5c5-e30e943986e6">
       <property name="CMC" value="0" />
       <property name="Color" value="Colorless" />
-      <property name="Type" value="Basic Land" />
+      <property name="Type" value="基本领土" />
       <property name="Subtype" value="Island" />
       <property name="Rarity" value="Basic Land" />
       <property name="Rules" value="3，将此领土翻为面向下：你抓一张牌。" />
@@ -2646,7 +2646,7 @@
     <card name="魏领土" id="93fe6cc9-c98d-4163-a9f6-0500880ae7f2">
       <property name="CMC" value="0" />
       <property name="Color" value="Colorless" />
-      <property name="Type" value="Basic Land" />
+      <property name="Type" value="基本领土" />
       <property name="Subtype" value="Island" />
       <property name="Rarity" value="Basic Land" />
       <property name="Rules" value="3，将此领土翻为面向下：你抓一张牌。" />
@@ -2658,7 +2658,7 @@
     <card name="蜀领土" id="1105f6d5-ae7e-4741-a7b9-bb527546df27">
       <property name="CMC" value="0" />
       <property name="Color" value="Colorless" />
-      <property name="Type" value="Basic Land" />
+      <property name="Type" value="基本领土" />
       <property name="Subtype" value="Mountain" />
       <property name="Rarity" value="Basic Land" />
       <property name="Rules" value="3，将此领土翻为面向下：你抓一张牌。" />
@@ -2670,7 +2670,7 @@
     <card name="蜀领土" id="1fbaf1dd-f882-4b26-8326-8590bffc3243">
       <property name="CMC" value="0" />
       <property name="Color" value="Colorless" />
-      <property name="Type" value="Basic Land" />
+      <property name="Type" value="基本领土" />
       <property name="Subtype" value="Mountain" />
       <property name="Rarity" value="Basic Land" />
       <property name="Rules" value="3，将此领土翻为面向下：你抓一张牌。" />
@@ -2682,7 +2682,7 @@
     <card name="吴领土" id="5646ba69-2df9-4e64-a090-9acbf890fb2e">
       <property name="CMC" value="0" />
       <property name="Color" value="Colorless" />
-      <property name="Type" value="Basic Land" />
+      <property name="Type" value="基本领土" />
       <property name="Subtype" value="Forest" />
       <property name="Rarity" value="Basic Land" />
       <property name="Rules" value="3，将此领土翻为面向下：你抓一张牌。" />
@@ -2694,7 +2694,7 @@
     <card name="吴领土" id="6dfba503-02c0-4ff9-a5fd-4ae3e9135a27">
       <property name="CMC" value="0" />
       <property name="Color" value="Colorless" />
-      <property name="Type" value="Basic Land" />
+      <property name="Type" value="基本领土" />
       <property name="Subtype" value="Forest" />
       <property name="Rarity" value="Basic Land" />
       <property name="Rules" value="3，将此领土翻为面向下：你抓一张牌。" />
@@ -2706,7 +2706,7 @@
     <card name="群雄领土" id="16dcb490-0f89-42c3-9c2f-9061320e72ae">
       <property name="CMC" value="0" />
       <property name="Color" value="Colorless" />
-      <property name="Type" value="Basic Land" />
+      <property name="Type" value="基本领土" />
       <property name="Subtype" value="Swamp" />
       <property name="Rarity" value="Basic Land" />
       <property name="Rules" value="3，将此领土翻为面向下：你抓一张牌。" />
@@ -2718,7 +2718,7 @@
     <card name="群雄领土" id="ec4e9810-bd17-4579-b854-4b06dea42238">
       <property name="CMC" value="0" />
       <property name="Color" value="Colorless" />
-      <property name="Type" value="Basic Land" />
+      <property name="Type" value="基本领土" />
       <property name="Subtype" value="Swamp" />
       <property name="Rarity" value="Basic Land" />
       <property name="Rules" value="3，将此领土翻为面向下：你抓一张牌。" />
